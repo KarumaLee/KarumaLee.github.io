@@ -193,6 +193,102 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/22/JAVA/JAVA-1-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="KarumaLee">
+      <meta itemprop="description" content="渴望成为自己">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="遥远的理想乡">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/22/JAVA/JAVA-1-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" class="post-title-link" itemprop="url">JAVA | 1、基本数据结构与流程控制</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-22 05:14:19" itemprop="dateCreated datePublished" datetime="2022-03-22T05:14:19+08:00">2022-03-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JAVA/" itemprop="url" rel="index"><span itemprop="name">JAVA</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="第一部分-Java的基本数据结构与流程控制"><a href="#第一部分-Java的基本数据结构与流程控制" class="headerlink" title="第一部分 Java的基本数据结构与流程控制"></a>第一部分 Java的基本数据结构与流程控制</h3><p>本文是建立在拥有一定C&#x2F;C++基础上介绍的<strong>主观性极强的</strong>个人学习笔记，以个人感受和心得为主。</p>
+<h4 id="1、最简单的Java应用程序"><a href="#1、最简单的Java应用程序" class="headerlink" title="1、最简单的Java应用程序"></a>1、最简单的Java应用程序</h4><p>众所周知，任何编程语言都是从一句Hello World开始的，所以…</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> MyJava;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span></span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; Hello world!</span><br></pre></td></tr></table></figure>
+<p>简单分析： </p>
+<ul>
+<li>package表明这个java程序包含在MyJava这个包里面，包可以理解为类的容器</li>
+<li>public称为访问修饰符，表示访问权限的级别，与C++基本类似  </li>
+<li>class表明这是一个java的类，由此可见Java相较于C++更加依赖类与对象的使用，其中类的标识符约定俗成为首字母大写</li>
+<li>println与C++中的printf或cout唯一不同的是，前者相当于输出后自动添加一个换行符，不需要的话同样有print方法可以使用  </li>
+<li>java程序并不需要return 0，正常结束的java程序默认退出代码为0，若需要修改可以使用System.exit方法</li>
+</ul>
+<p>单从这一个Hello World来看，Java似乎并不是一个很简洁的语言（？），因为java十分注重类之间的包含和使用，因此在最开始会显得有些冗长，不过后续java的特点会慢慢展现出来，毕竟谁不喜欢int main（）呢<br>众所周知，读到这里你已经完全掌握了java并且可以找到不错的工作（不是），当然你也可以选择继续深入（<del>入土</del>）  </p>
+<h4 id="2、注释"><a href="#2、注释" class="headerlink" title="2、注释"></a>2、注释</h4><p>java的注释继承了C++的注释方法，其中单行注释和多行注释完全一样，因此这里不做赘述，唯一的不同点在于java多了一项特殊的注释–文档注释  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* 这是一份java的文档注释案例</span><br><span class="line">* @author Karuma</span><br><span class="line">* @version 1.0</span><br><span class="line">* @Update 2020/xx/xx</span><br><span class="line">* note：这家公司拖欠员工工资，赶紧跑路</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<p>值得一提的是，java可以根据文档注释的内容与关键字自动生成文档以及作者信息，这样即方便了项目管理也减轻了项目解释的工作  </p>
+<h4 id="3、数据类型"><a href="#3、数据类型" class="headerlink" title="3、数据类型"></a>3、数据类型</h4><ul>
+<li>整形：int、short、long、byte和C++在使用上几乎相同</li>
+<li>浮点型：float、double和C++在使用上几乎相同</li>
+<li>char：这里表示Unicode编码的字符单元的字符类型，可以简单理解为字符  </li>
+<li>boolean：即C++的bool  </li>
+<li>数组：与C++不同，java声明的方式为Templete[] name;此外，java的数组支持直接相互赋值（好耶）</li>
+</ul>
+<p>变量的声明与初始化、运算符类似于C++，不过常量的修饰符为final  </p>
+<h4 id="4、输入输出"><a href="#4、输入输出" class="headerlink" title="4、输入输出"></a>4、输入输出</h4><p>对于java而言，标准输入流进行控制台输入需要以来Scanner类并与System.in关联，以下代码可以直观体现出Scanner的最基本的操作  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">Main</span><span class="params">(String[] args)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//首先的首先，使用Scanner类必须使用import引用java.util.Scanner</span></span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);<span class="comment">//实例一个Scanner类的对象</span></span><br><span class="line">        System.out.println(<span class="string">&quot;请告诉我你的名字：&quot;</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> in.nextLine();<span class="comment">//将标准输入流的一行内容赋值给string类的对象name</span></span><br><span class="line">        System.out.println(<span class="string">&quot;你的名字是&quot;</span> + name);<span class="comment">//输出信息</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Scanner对于数据的读入可以说相当方便，但是就安全性而言Console类更胜一筹，前者对于最基本的输入输出还是很便利的<br>Java的输出类似于C++中printf与cout的结合体，即支持简单的用+连接每个输出元素，又支持传统的占位符输出法  </p>
+<h4 id="5、分支和循环"><a href="#5、分支和循环" class="headerlink" title="5、分支和循环"></a>5、分支和循环</h4><p>Java几乎完整延续了C++的流程控制语法，因此不多介绍</p>
+<p>截止目前，Java和C++可以说是惊人的相似，我愿称之为C++++（C#：？）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/16/archives/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -453,20 +549,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
