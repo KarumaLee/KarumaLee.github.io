@@ -240,11 +240,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="AcWing-1442-单词处理器—原题链接"><a href="#AcWing-1442-单词处理器—原题链接" class="headerlink" title="AcWing 1442. 单词处理器—原题链接"></a>AcWing 1442. 单词处理器—<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/1444/">原题链接</a></h4><p>题目标签：字符串 | 模拟  </p>
-<blockquote>
-<p>思路：<br>恩模拟就完了，派大星看了都会（向派大星道歉）</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> LL;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e5</span> + <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="type">int</span> n, k;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; k;</span><br><span class="line">    <span class="type">int</span> now = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        string s;</span><br><span class="line">        cin &gt;&gt; s;</span><br><span class="line">        <span class="keyword">if</span>(now + s.<span class="built_in">size</span>() &lt;= k) now += s.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            now = s.<span class="built_in">size</span>();</span><br><span class="line">            cout &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; s &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <p>AcWing2022春季每日一题，第二周题解</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/26/AcWing_DailyProblem_Spring2022/AcWing2022%E6%98%A5%E5%AD%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98-2-%E7%AC%AC%E4%BA%8C%E5%91%A8/#more" rel="contents">
@@ -318,11 +314,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="AcWing-3346-你知道你的ABC吗—原题链接"><a href="#AcWing-3346-你知道你的ABC吗—原题链接" class="headerlink" title="AcWing 3346. 你知道你的ABC吗—原题链接"></a>AcWing 3346. 你知道你的ABC吗—<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/3349/">原题链接</a></h4><p>题目标签：思维题 | 数学推理  </p>
-<blockquote>
-<p>思路：<br>由于7个数进行排序，第一个第二个数一定是a和b，第三个数有两种可能，要么是c，要么是a+b，如果是后者的话那么第四个数一定是c，也就是说进行一个小判断就行（某场cf的a题原题）</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a[<span class="number">7</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;<span class="number">7</span>; i++) cin &gt;&gt; a[i];</span><br><span class="line">    <span class="built_in">sort</span>(a, a+<span class="number">7</span>);</span><br><span class="line">    cout &lt;&lt; a[<span class="number">0</span>] &lt;&lt; <span class="string">&quot; &quot;</span> &lt;&lt; a[<span class="number">1</span>] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">    <span class="comment">//判断第三个数是c还是a+b</span></span><br><span class="line">    <span class="keyword">if</span>(a[<span class="number">0</span>] + a[<span class="number">1</span>] == a[<span class="number">2</span>]) cout &lt;&lt; a[<span class="number">3</span>];</span><br><span class="line">    <span class="keyword">else</span> cout &lt;&lt; a[<span class="number">2</span>];</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <p>AcWing2022春季每日一题，第一周题解</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/24/AcWing_DailyProblem_Spring2022/AcWing2022%E6%98%A5%E5%AD%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98-1-%E7%AC%AC%E4%B8%80%E5%91%A8/#more" rel="contents">
@@ -397,7 +389,6 @@
 
       
           <h3 id="第二部分-类与对象"><a href="#第二部分-类与对象" class="headerlink" title="第二部分 类与对象"></a>第二部分 类与对象</h3><p>众所周知，“xxx是一门面向对象的编程语言”这句话折磨了许多初学面向对象的同学们（总之包括而我），因此，虽然这个说法非常不负责并且非常有问题，但是我需要直接了当的说：<strong>面向对象不就是结构体+函数吗</strong>（当然不是）  </p>
-<h4 id="I-面向对象中java与C-的区别"><a href="#I-面向对象中java与C-的区别" class="headerlink" title="I 面向对象中java与C++的区别"></a>I 面向对象中java与C++的区别</h4><p>事实上，Java作为一个摒弃了指针的语言来讲，面向对象这部分与C++有着显著的不同，比如说在对象实例化的部分：  </p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/23/JAVA_Basic/JAVA%E5%9F%BA%E7%A1%80-2-%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/#more" rel="contents">
@@ -471,53 +462,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="I-指令格式"><a href="#I-指令格式" class="headerlink" title="I 指令格式"></a>I 指令格式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[user@name ~]$ command [options] parameter1 parameter2 …</span><br></pre></td></tr></table></figure>
-<p>绝大多数指令遵循以上框架，其详细说明如下：  </p>
-<ul>
-<li>@前的user指的是用户名，@后的name指的是计算机的名称，~符号表明文件的home目录  </li>
-<li>$符号指的是“提示字符”，表示可以开始输入指令，其中root的提示字符为#  </li>
-<li>command指的是指令名称或可执行文件</li>
-<li>options指的是选项设定，实际使用时不加[]而是大部分用-作为前缀  </li>
-<li>parameter指的是指令的参数，以<strong>不计个数的空格</strong>区分  </li>
-<li>指令输入完毕后，回车键表示执行指令，指令太长时使用反斜杠\来跳脱回车符号</li>
-</ul>
-<p>注：Linux指令严格区分大小写，空格和回车是很重要的字符。  </p>
-<p>尝试以下指令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~</span><br></pre></td></tr></table></figure>
-<p>效果为列出home目录下的所有隐藏档与相关文件的属性<br>关于指令的严格区分大小写，以下案例可以充分展示：  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">date //显示日期和实现</span><br><span class="line">Date //找不到指令</span><br><span class="line">DATE //找不到指令</span><br></pre></td></tr></table></figure>
-<p>综上所述，大小写在Linux中是有很大区别的。  </p>
-<h4 id="II-语系"><a href="#II-语系" class="headerlink" title="II 语系"></a>II 语系</h4><p>由于Linux是支持多国语系的，如果系统默认设置下无法支持以中文编码输出数据，我们需要自行将支持语系改为英文，可以用到以下指令：  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locale //显示目前支持的语系</span><br></pre></td></tr></table></figure>
-<p>LANG 指语言语系的输出<br>LC_TIME 指时间方面的语系数据</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LANG=en_US.utf8 //更改输出信息的语系</span><br><span class="line">export LC_ALL=en_US.utf8 //同步更新LC_ALL</span><br></pre></td></tr></table></figure>
-<p>通过以上设置，就能够在本次登入中查看英文信息了  </p>
-<h4 id="III-基础指令操作"><a href="#III-基础指令操作" class="headerlink" title="III 基础指令操作"></a>III 基础指令操作</h4><ul>
-<li>显示日期的指令 date</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date</span><br></pre></td></tr></table></figure>
-<p>不加任何参数的date指令可以输出当前时间，且格式为星期+月+日+时+分+秒+时区+年份<br>当然也可以输入带有参数的指令  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">date +%Y/%m/%d //显示为 年/月/日</span><br><span class="line">date +%H:%M //显示为 时：分</span><br></pre></td></tr></table></figure>
-<p>其中，第一行命令中的选项部分不一定以-开头，也可以由+开头  </p>
-<ul>
-<li><p>显示日历的指令 cal  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cal //直接输出本月的日历</span><br><span class="line">cal 2015 //输出2015年一整年的日历</span><br></pre></td></tr></table></figure>
-<p>基本上cal这个命令可以接的语法为cal [month] [year]<br>当然如果输入了不存在的月份会出现对应的错误提示，对于Linux指令而言，指令反馈的错误是debug的一大关键信息  </p>
-<h4 id="VI-重要的热键"><a href="#VI-重要的热键" class="headerlink" title="VI 重要的热键"></a>VI 重要的热键</h4></li>
-<li><p>Tab 类似于在IDE中，在Linux命令行中Tab主要负责“补全”这一功能  </p>
-<ol>
-<li>在command部分中使用tab代表命令补齐，即输出所有满足已经输入部分文字为开头的指令  </li>
-<li>在之后的部分使用tab代表文件&#x2F;参数&#x2F;选项补齐，具体依情况而定</li>
-</ol>
-</li>
-<li><p>ctrl+c 终端目前程序，常用来跳出死循环  </p>
-</li>
-<li><p>ctrl+d 离开程序或输入结束，可以用来代替exit  </p>
-</li>
-<li><p>shift+pageup&#x2F;down 前后翻页</p>
-</li>
-</ul>
-
+          <p>虽然但是，第一次面对控制台的操作系统，即没有知识储备，又害怕不小心弄错了什么，那就从最简单的一些系统指令入手8</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/23/Linux_Basic/Linux%E5%9F%BA%E7%A1%80-1-%E9%A6%96%E6%AC%A1%E7%99%BB%E9%99%86%E7%9A%84%E7%AE%80%E5%8D%95%E6%8C%87%E4%BB%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -584,7 +537,6 @@
 
       
           <h3 id="第一部分-Java的基本数据结构与流程控制"><a href="#第一部分-Java的基本数据结构与流程控制" class="headerlink" title="第一部分 Java的基本数据结构与流程控制"></a>第一部分 Java的基本数据结构与流程控制</h3><p>本文是建立在拥有一定C&#x2F;C++基础上介绍的<strong>主观性极强的</strong>个人学习笔记，以个人感受和心得为主。</p>
-<h4 id="I-最简单的Java应用程序"><a href="#I-最简单的Java应用程序" class="headerlink" title="I 最简单的Java应用程序"></a>I 最简单的Java应用程序</h4><p>众所周知，任何编程语言都是从一句Hello World开始的，所以…  </p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2022/03/22/JAVA_Basic/JAVA%E5%9F%BA%E7%A1%80-1-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/#more" rel="contents">
