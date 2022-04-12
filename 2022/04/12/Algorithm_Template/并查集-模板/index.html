@@ -20,17 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="(老头环版)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="永世隔绝の理想乡">
-<meta property="og:url" content="http://example.com/tags/Linux/index.html">
+  <meta name="description" content="并查集&amp;带权并查集算法模板">
+<meta property="og:type" content="article">
+<meta property="og:title" content="并查集-模板">
+<meta property="og:url" content="http://example.com/2022/04/12/Algorithm_Template/%E5%B9%B6%E6%9F%A5%E9%9B%86-%E6%A8%A1%E6%9D%BF/index.html">
 <meta property="og:site_name" content="永世隔绝の理想乡">
-<meta property="og:description" content="(老头环版)">
+<meta property="og:description" content="并查集&amp;带权并查集算法模板">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-12T13:28:55.000Z">
+<meta property="article:modified_time" content="2022-04-12T13:32:54.274Z">
 <meta property="article:author" content="KarumaLee">
+<meta property="article:tag" content="C&#x2F;C++">
+<meta property="article:tag" content="数据结构">
+<meta property="article:tag" content="算法简介">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/tags/Linux/">
+<link rel="canonical" href="http://example.com/2022/04/12/Algorithm_Template/%E5%B9%B6%E6%9F%A5%E9%9B%86-%E6%A8%A1%E6%9D%BF/">
 
 
 <script id="page-configurations">
@@ -38,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: Linux | 永世隔绝の理想乡</title>
+  <title>并查集-模板 | 永世隔绝の理想乡</title>
   
 
 
@@ -187,51 +192,106 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">Linux
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/12/Algorithm_Template/%E5%B9%B6%E6%9F%A5%E9%9B%86-%E6%A8%A1%E6%9D%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="http://124.222.23.180/i/2022/03/26/623e83f49006b.jpg">
+      <meta itemprop="name" content="KarumaLee">
+      <meta itemprop="description" content="(老头环版)">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="永世隔绝の理想乡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          并查集-模板
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-12 21:28:55" itemprop="dateCreated datePublished" datetime="2022-04-12T21:28:55+08:00">2022-04-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/" itemprop="url" rel="index"><span itemprop="name">算法模板</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>并查集&amp;带权并查集算法模板</p>
+<span id="more"></span>
+<h3 id="并查集-Distjoint-Set"><a href="#并查集-Distjoint-Set" class="headerlink" title="并查集 | Distjoint Set"></a>并查集 | Distjoint Set</h3><h4 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a>算法简介</h4><p>并查集(disjoint set)，英文意为与若干集合做交互，中文就更直观的表达了对集合做合并或查询的操作。<br>一般情况下需要其他信息配合并查集进行维护，也就是带权并查集。<br>有一些算法是实现也是基于并查集的思想，比如说最小生成树的kruskal和最近公共祖先的tarjan。  </p>
+<h4 id="存储方案"><a href="#存储方案" class="headerlink" title="存储方案"></a>存储方案</h4><p>逻辑存储：使用树来表示集合的从属关系<br>物理存储：一个一维数组p[N],表示为某个节点的祖宗节点  </p>
+<h4 id="代码模板"><a href="#代码模板" class="headerlink" title="代码模板"></a>代码模板</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//物理存储</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N;<span class="comment">//数据范围</span></span><br><span class="line"><span class="type">int</span> p[N];<span class="comment">//并查集数组</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=n; i++) p[i] = i; <span class="comment">//将每个节点的父节点初始化为自身</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//查找 返回x的祖宗节点 + 路径压缩</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p[x] != x) p[x] = <span class="built_in">find</span>(p[x]);<span class="comment">//递归实现路径压缩</span></span><br><span class="line">    <span class="keyword">return</span> p[x];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//合并 a的祖宗节点成为b的祖宗节点的父节点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//简单的合并一条语句即可，这里是为了带权并查集做准备</span></span><br><span class="line">    <span class="comment">//找到a和b的祖宗节点并备份</span></span><br><span class="line">    <span class="type">int</span> aa = <span class="built_in">find</span>(a);</span><br><span class="line">    <span class="type">int</span> bb = <span class="built_in">find</span>(b);</span><br><span class="line">    <span class="keyword">if</span>(aa != bb)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//树的存储中为b的祖先节点指向a的祖先节点</span></span><br><span class="line">        p[<span class="built_in">find</span>(b)] = <span class="built_in">find</span>(a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="带权并查集常见类型"><a href="#带权并查集常见类型" class="headerlink" title="带权并查集常见类型"></a>带权并查集常见类型</h4><p>这里特指需要更改merge或者find函数的类型</p>
+<ul>
+<li>更新集合的大小 -&gt; 绑定到根节点</li>
+<li>更新到根节点的距离 -&gt; 绑定到每个节点</li>
+</ul>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-23T23:57:00+08:00"
-              content="2022-03-23">
-          03-23
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C-C/" rel="tag"># C/C++</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B/" rel="tag"># 算法简介</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/23/Linux_Basic/Linux%E5%9F%BA%E7%A1%80-1-%E9%A6%96%E6%AC%A1%E7%99%BB%E9%99%86%E7%9A%84%E7%AE%80%E5%8D%95%E6%8C%87%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">Linux基础 | 1、首次登陆的简单指令</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/11/AcWing_DailyProblem_Spring2022/AcWing2022%E6%98%A5%E5%AD%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98-2-%E7%AC%AC%E5%9B%9B%E5%91%A8/" rel="prev" title="AcWing2022春季每日一题-2-第四周">
+      <i class="fa fa-chevron-left"></i> AcWing2022春季每日一题-2-第四周
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -284,6 +344,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B9%B6%E6%9F%A5%E9%9B%86-Distjoint-Set"><span class="nav-number">1.</span> <span class="nav-text">并查集 | Distjoint Set</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">算法简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%98%E5%82%A8%E6%96%B9%E6%A1%88"><span class="nav-number">1.2.</span> <span class="nav-text">存储方案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF"><span class="nav-number">1.3.</span> <span class="nav-text">代码模板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B8%A6%E6%9D%83%E5%B9%B6%E6%9F%A5%E9%9B%86%E5%B8%B8%E8%A7%81%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.4.</span> <span class="nav-text">带权并查集常见类型</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

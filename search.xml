@@ -455,4 +455,27 @@ ArrayList类和C++的vector极为相似，但是需要注意的是，java中没�
         <tag>每日一题</tag>
       </tags>
   </entry>
+  <entry>
+    <title>并查集-模板</title>
+    <url>/2022/04/12/Algorithm_Template/%E5%B9%B6%E6%9F%A5%E9%9B%86-%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<p>并查集&amp;带权并查集算法模板</p>
+<span id="more"></span>
+<h3 id="并查集-Distjoint-Set"><a href="#并查集-Distjoint-Set" class="headerlink" title="并查集 | Distjoint Set"></a>并查集 | Distjoint Set</h3><h4 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a>算法简介</h4><p>并查集(disjoint set)，英文意为与若干集合做交互，中文就更直观的表达了对集合做合并或查询的操作。<br>一般情况下需要其他信息配合并查集进行维护，也就是带权并查集。<br>有一些算法是实现也是基于并查集的思想，比如说最小生成树的kruskal和最近公共祖先的tarjan。  </p>
+<h4 id="存储方案"><a href="#存储方案" class="headerlink" title="存储方案"></a>存储方案</h4><p>逻辑存储：使用树来表示集合的从属关系<br>物理存储：一个一维数组p[N],表示为某个节点的祖宗节点  </p>
+<h4 id="代码模板"><a href="#代码模板" class="headerlink" title="代码模板"></a>代码模板</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//物理存储</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N;<span class="comment">//数据范围</span></span><br><span class="line"><span class="type">int</span> p[N];<span class="comment">//并查集数组</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=n; i++) p[i] = i; <span class="comment">//将每个节点的父节点初始化为自身</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//查找 返回x的祖宗节点 + 路径压缩</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p[x] != x) p[x] = <span class="built_in">find</span>(p[x]);<span class="comment">//递归实现路径压缩</span></span><br><span class="line">    <span class="keyword">return</span> p[x];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//合并 a的祖宗节点成为b的祖宗节点的父节点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//简单的合并一条语句即可，这里是为了带权并查集做准备</span></span><br><span class="line">    <span class="comment">//找到a和b的祖宗节点并备份</span></span><br><span class="line">    <span class="type">int</span> aa = <span class="built_in">find</span>(a);</span><br><span class="line">    <span class="type">int</span> bb = <span class="built_in">find</span>(b);</span><br><span class="line">    <span class="keyword">if</span>(aa != bb)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//树的存储中为b的祖先节点指向a的祖先节点</span></span><br><span class="line">        p[<span class="built_in">find</span>(b)] = <span class="built_in">find</span>(a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="带权并查集常见类型"><a href="#带权并查集常见类型" class="headerlink" title="带权并查集常见类型"></a>带权并查集常见类型</h4><p>这里特指需要更改merge或者find函数的类型</p>
+<ul>
+<li>更新集合的大小 -&gt; 绑定到根节点</li>
+<li>更新到根节点的距离 -&gt; 绑定到每个节点</li>
+</ul>
+]]></content>
+      <categories>
+        <category>算法模板</category>
+      </categories>
+      <tags>
+        <tag>C/C++</tag>
+        <tag>数据结构</tag>
+        <tag>算法简介</tag>
+      </tags>
+  </entry>
 </search>
