@@ -552,4 +552,14 @@ ArrayList类和C++的vector极为相似，但是需要注意的是，java中没�
         <tag>赛后补题</tag>
       </tags>
   </entry>
+  <entry>
+    <title>置顶 | Karuma算法垃圾桶</title>
+    <url>/2022/04/20/topList/</url>
+    <content><![CDATA[<p>记录一些出现的奇怪的错误</p>
+<span id="more"></span>
+<ul>
+<li>对最小值初始化的时候 long long 需要开到18次幂以上的规模</li>
+</ul>
+]]></content>
+  </entry>
 </search>
