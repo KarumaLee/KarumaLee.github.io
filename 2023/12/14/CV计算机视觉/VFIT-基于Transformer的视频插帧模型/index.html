@@ -20,17 +20,24 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="(王国之泪版)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="永世隔绝の理想乡">
-<meta property="og:url" content="http://example.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/index.html">
+  <meta name="description" content="基于Transformer的视频插帧模型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VFIT - 基于Transformer的视频插帧模型">
+<meta property="og:url" content="http://example.com/2023/12/14/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/VFIT-%E5%9F%BA%E4%BA%8ETransformer%E7%9A%84%E8%A7%86%E9%A2%91%E6%8F%92%E5%B8%A7%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="永世隔绝の理想乡">
-<meta property="og:description" content="(王国之泪版)">
+<meta property="og:description" content="基于Transformer的视频插帧模型">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://overdata-1305650175.cos.ap-chongqing.myqcloud.com/paper%2Fpic-forBLOG%2FVFIT-1.png">
+<meta property="og:image" content="https://overdata-1305650175.cos.ap-chongqing.myqcloud.com/paper%2Fpic-forBLOG%2FVFIT-2.png">
+<meta property="article:published_time" content="2023-12-14T07:00:31.000Z">
+<meta property="article:modified_time" content="2023-12-14T07:01:37.152Z">
 <meta property="article:author" content="KarumaLee">
+<meta property="article:tag" content="机器学习">
+<meta property="article:tag" content="CV">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://overdata-1305650175.cos.ap-chongqing.myqcloud.com/paper%2Fpic-forBLOG%2FVFIT-1.png">
 
-<link rel="canonical" href="http://example.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/">
+<link rel="canonical" href="http://example.com/2023/12/14/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/VFIT-%E5%9F%BA%E4%BA%8ETransformer%E7%9A%84%E8%A7%86%E9%A2%91%E6%8F%92%E5%B8%A7%E6%A8%A1%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -38,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>标签: 编程语言学习 | 永世隔绝の理想乡</title>
+  <title>VFIT - 基于Transformer的视频插帧模型 | 永世隔绝の理想乡</title>
   
 
 
@@ -187,91 +194,134 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">编程语言学习
-          <small>标签</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/14/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/VFIT-%E5%9F%BA%E4%BA%8ETransformer%E7%9A%84%E8%A7%86%E9%A2%91%E6%8F%92%E5%B8%A7%E6%A8%A1%E5%9E%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.luogu.com.cn/upload/image_hosting/pqiqm25c.png">
+      <meta itemprop="name" content="KarumaLee">
+      <meta itemprop="description" content="(王国之泪版)">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="永世隔绝の理想乡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          VFIT - 基于Transformer的视频插帧模型
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-12-14 15:00:31" itemprop="dateCreated datePublished" datetime="2023-12-14T15:00:31+08:00">2023-12-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/" itemprop="url" rel="index"><span itemprop="name">CV计算机视觉</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-28T22:58:50+08:00"
-              content="2022-03-28">
-          03-28
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/28/JAVA_Basic/JAVA%E5%9F%BA%E7%A1%80-3-%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF/" itemprop="url">
-            <span itemprop="name">JAVA基础_3_类的继承</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-23T23:59:20+08:00"
-              content="2022-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/23/JAVA_Basic/JAVA%E5%9F%BA%E7%A1%80-2-%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/" itemprop="url">
-            <span itemprop="name">JAVA基础 | 2、类与对象</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-22T05:14:19+08:00"
-              content="2022-03-22">
-          03-22
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/22/JAVA_Basic/JAVA%E5%9F%BA%E7%A1%80-1-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/" itemprop="url">
-            <span itemprop="name">JAVA基础 | 1、基本数据结构与流程控制</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        <p>基于Transformer的视频插帧模型</p>
+<span id="more"></span>
+<p>Title：Video Frame Interpolation Transformer</p>
+<p>major：CV</p>
+<p>Author：Zhihao Shi, Xiangyu Xu, Xiaohong Liu, Jun Chen, Ming-Hsuan Yang</p>
+<p>Push：CVPR 2022</p>
+<p>paper：<a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.pdf">https://openaccess.thecvf.com/content/CVPR2022/papers/Shi_Video_Frame_Interpolation_Transformer_CVPR_2022_paper.pdf</a></p>
+<p>code：<a target="_blank" rel="noopener" href="https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer">https://github.com/zhshi0816/Video-Frame-Interpolation-Transformer</a></p>
+<p>简介：</p>
+<p>论文提出了一种基于Transformer的视频帧插值框架（VFIT），用于解决视频插值的计算机视觉问题。该框架允许内容感知的聚合权重，并通过自注意操作考虑长距离依赖。为了避免全局自注意的高计算成本，作者引入了局部注意的概念并将其扩展到空间-时间域。此外，提出了一种节省内存的空间-时间分离策略，这也提高了性能。还开发了一种多尺度框架合成方案，以充分实现Transformer的潜力。广泛的实验表明，所提出的模型在多种基准数据集上在定量和定性方面均优于现有最先进的方法。</p>
+<p>主要贡献：</p>
+<ul>
+<li>提出了新颖有效的视频插帧模型</li>
+<li>提出了时空分离的局部注意力机制</li>
+<li>提出了多尺度合成方案</li>
+</ul>
+<p>研究背景：</p>
+<p>最常见的就是由30帧的视频变成60帧。该任务属于依赖性较强的生成问题，通过在现有帧之间合成新帧来时间上对输入视频进行上采样。</p>
+<p>这是计算机视觉中的一个基本问题，涉及对运动结构和自然图像分布的理解，有助于诸如图像恢复、虚拟现实和医学成像等众多下游应用</p>
+<p>研究限制：</p>
+<p>视频信息由于其高纬度，复杂度和计算成本指数上升。当然可以粗暴的把视频作为更高纬度的图片，但是这样失去了很多信息例如时序信息。<br>CNN曾被用与视频分析，但是卷积操作与内容的时序变化不相关，再者卷积核大小直接影响结果且不能粗暴的通过增加数量来弥补。<br>大部分视频插帧模型不擅长处理复杂的纹理和运动。<br>Transformer由NLP改进至视觉领域，再从开销大的全局注意力优化至局部注意力。之前已经有人以此作过图像的研究，作者将其应用在视频上。</p>
+<p>模型架构：</p>
+<p>模型分为三部分</p>
+<p>1、用3D卷积提取浅层特征</p>
+<p>2、使用深层网络获取深层特征</p>
+<p>3、使用SynBlocks生成新帧</p>
+<p><img src="https://overdata-1305650175.cos.ap-chongqing.myqcloud.com/paper%2Fpic-forBLOG%2FVFIT-1.png" alt="VFIT-1"></p>
+<p>方法论 - 局部注意力机制：</p>
+<p>全局注意力开销大，虽然能用分块的方法解决但是影响质量<br>引入swin的局部注意力机制，但是并不能直接应用于视频<br>STS：把图3中4纬的图像分割为m<em>m进行第一次多头注意力，之后恢复原状，各边留出m&#x2F;2后重新分割之后再进行一次多头注意力<br>Sep-STS:对于空间，将特征图分成2D的块（分离时间），对于时间，将特征图分为T</em>T个向量（分离空间）<br>引入层正则化优化计算以及GELU激活函数</p>
+<p><img src="https://overdata-1305650175.cos.ap-chongqing.myqcloud.com/paper%2Fpic-forBLOG%2FVFIT-2.png" alt="VFIT-2"></p>
+<p>方法论 - 多尺度合成块：</p>
+<p>SynBlocks之后的操作：上一层粗糙图像的上采样（双线性插值）和当前层block输出相加</p>
+<p>SynBlocks的输入输出：1、对于l层特征，按帧抽出后放进三个卷积层2、卷积层输出的结果与原帧融合3、输出结果与特征直接卷积的值相乘4、最后将所有帧相加</p>
+<p>实验细节：</p>
+<p>模型训练：loss 绝对值损失、opt adamax、evaluate  PSNR&amp;SSIM、dataset Vimeo-90K 等<br>训练环境：desktop with an Intel Core i7-8700K CPU and an NVIDIA GTX 2080 Ti GPU<br>模型设计了基础版VFIT- B和简单版VFIT- S，与现有的模型做了对比实验。除此之外还做了消融实验。</p>
+<p>结论：</p>
+<p>本文提出了一种参数节省、运行高效的VFIT框架，用于视频帧插值，性能达到了最先进水平。<br>使用了时间空间分离的局部注意力机制，本想考虑时空特征的前提下节省计算成本，但是得到了更好的效果。<br>使用了多尺寸生成块，同时考虑多个维度的特征，结合原帧的基础上从粗糙到细致优化生成帧。</p>
+<p>展望：</p>
+<p>本文的损失函数是最简单的绝对值损失，并且只作用于结果部分。作者尝试分块计算损失值但并不是很理想。<br>本文使用的上下采样方式是双线性插值法，本以为用Transformer架构会更好但得到了较差的结果，这点具有研究价值。<br>本文不仅适用于简单的视频，还可以拓展到其他具有时序逻辑的应用上。并且本文是泛用的视频生成帧，可以试着专攻某一个固定的事物进行生成。</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
+              <a href="/tags/CV/" rel="tag"># CV</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/10/18/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%A2%86%E5%9F%9F%E7%9A%84Hello-World-%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/" rel="prev" title="机器学习领域的Hello World - 从零实现手写数字识别">
+      <i class="fa fa-chevron-left"></i> 机器学习领域的Hello World - 从零实现手写数字识别
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
